@@ -18,3 +18,29 @@ O **SLA (Service Level Agreement)** da Azure define o nível de garantia para a 
 | 99,999%                   | 26 segundos                                | 5 minutos e 15 segundos                   |
 
 Essa tabela mostra os tempos de inatividade permitidos de acordo com o SLA de disponibilidade garantido para os serviços da Azure.
+
+**Tipos de Serviços de Nuvem**
+
+Aqui está uma tabela comparando IaaS, PaaS e SaaS:
+
+| **Características**            | **IaaS (Infrastructure as a Service)**          | **PaaS (Platform as a Service)**             | **SaaS (Software as a Service)**              |
+|---------------------------------|------------------------------------------------|---------------------------------------------|----------------------------------------------|
+| **Definição**                   | Infraestrutura de TI fornecida via nuvem, como servidores e armazenamento. | Plataforma para desenvolver e gerenciar aplicações, sem se preocupar com a infraestrutura. | Software completo entregue via web, que o usuário acessa e utiliza diretamente. |
+| **Controle do usuário**         | Controle sobre hardware, rede, armazenamento, sistemas operacionais, etc. | Controle sobre as aplicações e dados; a infraestrutura subjacente é gerenciada pelo provedor. | Controle apenas sobre os dados e configurações da aplicação. |
+| **Exemplos de serviços**        | Amazon EC2, Microsoft Azure VMs, Google Compute Engine. | Google App Engine, Heroku, Microsoft Azure App Services. | Google Workspace, Salesforce, Microsoft 365. |
+| **Gerenciamento pelo provedor** | Gerenciamento de servidores, rede e armazenamento. O sistema operacional e as aplicações são gerenciados pelo cliente. | Gerenciamento da infraestrutura e middleware. O cliente cuida apenas das aplicações. | Gerenciamento completo, incluindo software, infraestrutura e atualizações. |
+| **Flexibilidade**               | Alta flexibilidade para configurar e gerenciar recursos de TI. | Flexibilidade moderada para desenvolver e implementar aplicações. | Flexibilidade limitada, o foco é na usabilidade e conveniência. |
+| **Público-alvo**                | Equipes de TI, desenvolvedores que precisam de controle sobre a infraestrutura. | Desenvolvedores que querem focar no código sem se preocupar com a infraestrutura. | Usuários finais e empresas que precisam de soluções prontas. |
+| **Custos**                      | Custo sob demanda, dependendo do uso da infraestrutura. | Custo baseado na utilização da plataforma e dos recursos de desenvolvimento. | Custo geralmente baseado em assinatura para o uso do software. |
+| **Escalabilidade**              | Escalável conforme a necessidade do cliente.    | Escalável para o desenvolvimento e gestão de aplicações. | Escalável conforme o número de usuários e recursos. |
+
+### **Responsabilidade Compartilhada**
+O modelo de responsabilidade compartilhada é uma abordagem usada pelos provedores de serviços de nuvem para definir claramente quem é responsável por cada aspecto da segurança e gerenciamento dos serviços oferecidos.
+
+- **Provedor de Nuvem**: Responsável pela segurança da **nuvem**, ou seja, pela infraestrutura subjacente que inclui servidores, armazenamento, rede, e data centers.
+- **Cliente/Usuário**: Responsável pela segurança **na nuvem**, o que inclui o gerenciamento de acesso, configuração de aplicações, proteção de dados, e qualquer atividade realizada sobre os recursos fornecidos pelo provedor.
+
+O nível de responsabilidade varia dependendo do serviço:
+- **IaaS**: O cliente tem mais responsabilidades (gerenciamento de sistemas operacionais, dados e aplicações).
+- **PaaS**: O provedor assume mais controle da infraestrutura, enquanto o cliente gerencia as aplicações e dados.
+- **SaaS**: O provedor é responsável pela maior parte da infraestrutura e segurança, restando ao cliente cuidar dos dados e configurações de usuário.
