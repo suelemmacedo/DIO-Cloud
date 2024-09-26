@@ -44,3 +44,19 @@ O nível de responsabilidade varia dependendo do serviço:
 - **IaaS**: O cliente tem mais responsabilidades (gerenciamento de sistemas operacionais, dados e aplicações).
 - **PaaS**: O provedor assume mais controle da infraestrutura, enquanto o cliente gerencia as aplicações e dados.
 - **SaaS**: O provedor é responsável pela maior parte da infraestrutura e segurança, restando ao cliente cuidar dos dados e configurações de usuário.
+
+**Componentes de Arquitetura do Azure**
+
+A arquitetura do Azure é construída sobre uma infraestrutura global que inclui **regiões**, **zonas de disponibilidade**, **pares de região** e **regiões soberanas**, além de diversos **recursos** que garantem alta disponibilidade, resiliência e segurança para as aplicações e serviços.
+
+**Regiões do Azure** são áreas geográficas que contêm um ou mais data centers, projetadas para proporcionar proximidade com os usuários e conformidade com regulamentações locais. Cada região oferece um conjunto completo de serviços do Azure, permitindo que os usuários escolham a melhor localização para hospedar suas aplicações, otimizando latência e desempenho. Exemplos incluem regiões como "Leste dos EUA", "Europa Ocidental" e "Sudeste Asiático".
+
+Dentro de cada região, o Azure disponibiliza as **zonas de disponibilidade**, que são locais físicos separados com suas próprias fontes de energia, refrigeração e rede, garantindo resiliência em caso de falhas de data centers. Cada zona é independente e, ao implantar recursos em várias zonas, as aplicações podem alcançar alta disponibilidade e tolerância a falhas.
+
+Um conceito chave da infraestrutura global do Azure é o de **pares de região**, que são duas regiões dentro da mesma área geográfica emparelhadas entre si para garantir recuperação de desastres e replicação de dados. Um dos principais benefícios dos pares de região é que, em caso de manutenção ou interrupção planejada em uma região, a outra permanece disponível, minimizando o impacto sobre os serviços. Um exemplo clássico é o par de regiões "Leste dos EUA" e "Oeste dos EUA".
+
+Além disso, o Azure oferece **regiões soberanas**, projetadas especificamente para atender a requisitos de soberania de dados e conformidade em determinados países. Essas regiões são operadas de forma independente das outras regiões globais e incluem o **Azure China** e o **Azure Government** (nos EUA), que seguem regulamentações rigorosas quanto à localização e acesso aos dados.
+
+Os **recursos do Azure** incluem uma vasta gama de serviços e produtos que podem ser usados para construir, gerenciar e escalar soluções na nuvem. Entre esses recursos, destacam-se o **Azure Compute**, que abrange máquinas virtuais, contêineres e serviços de computação serverless; o **Azure Storage**, que oferece armazenamento de arquivos, discos e objetos (como Blob Storage); e os bancos de dados gerenciados, como o **Azure SQL Database** e o **Cosmos DB**. Há também recursos de rede, como o **Azure Virtual Network (VNet)** e o **Azure Load Balancer**, que garantem conectividade e distribuição de tráfego, além de ferramentas de segurança, como o **Azure Active Directory** e o **Azure Security Center**.
+
+Essa arquitetura robusta e distribuída globalmente do Azure oferece flexibilidade para atender a diversas necessidades de negócios e conformidade, permitindo que organizações escolham onde e como implantar seus serviços com alta disponibilidade, segurança e resiliência.
