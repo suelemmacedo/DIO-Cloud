@@ -67,6 +67,34 @@ A **Área de Trabalho Virtual do Azure (Azure Virtual Desktop)** permite que usu
 
 Os **serviços de contêineres** do Azure, como o **Azure Container Instances (ACI)**, permitem que contêineres sejam executados de forma isolada e sem a necessidade de gerenciar a infraestrutura subjacente. Já o **Azure Kubernetes Service (AKS)** é uma solução gerenciada para orquestrar contêineres usando o Kubernetes, oferecendo escalabilidade e automação para implantações em contêineres.
 
+
+
 O **Azure Functions** é um serviço de computação serverless, que permite executar pequenas peças de código em resposta a eventos, eliminando a necessidade de gerenciar servidores. É ideal para automação de tarefas e processamento de eventos em tempo real.
 
 Por fim, os **serviços de rede do Azure** garantem conectividade e segurança robustas para as infraestruturas. Com o **Azure Virtual Network (VNet)**, é possível criar redes virtuais isoladas, conectar diferentes VMs e integrar ambientes on-premises com a nuvem. Além disso, há serviços como o **Azure Load Balancer**, que distribui o tráfego de rede de maneira eficiente, e o **Azure Application Gateway**, que oferece balanceamento de carga com inspeção de nível de aplicação.
+
+
+O **armazenamento no Azure** oferece várias opções para atender diferentes necessidades. As contas de armazenamento no Azure podem hospedar diferentes tipos de serviços:
+
+- **Blobs**: Ideal para armazenar grandes quantidades de dados não estruturados, como documentos, imagens e vídeos.
+- **Disco**: Armazenamento persistente de discos para máquinas virtuais, proporcionando alta durabilidade e desempenho.
+- **Fila (Queue)**: Usada para armazenar e gerenciar mensagens entre componentes de um sistema distribuído, garantindo comunicação assíncrona.
+- **Arquivos (Files)**: Serviço que oferece compartilhamento de arquivos em nuvem com SMB (Server Message Block), útil para ambientes híbridos.
+- **Tabelas (Tables)**: Usadas para armazenar dados semi-estruturados em grandes volumes, como logs de eventos e dados telemétricos.
+
+### Pontos de extremidades públicas
+Os serviços de armazenamento são acessados através de pontos de extremidade públicos, que oferecem uma interface para se conectar a partir de qualquer lugar pela internet.
+
+### Camadas de Acesso
+Existem diferentes camadas de acesso para otimizar o custo e o desempenho de armazenamento de acordo com a frequência de acesso aos dados:
+- **Frequente (Hot)**: Para dados acessados frequentemente.
+- **Esporádico (Cool)**: Para dados que são acessados com menos frequência, mas ainda exigem disponibilidade imediata.
+- **Frio (Cold)**: Para dados raramente acessados, com maior latência e custos de recuperação mais altos.
+- **Arquivo Morto (Archive)**: Para armazenamento de longo prazo, onde os dados são mantidos offline até a recuperação.
+
+### Migração para o Azure
+Existem diversas ferramentas para facilitar a migração de dados para o Azure:
+- **Azure Data Box**: Dispositivo físico que permite transferir grandes volumes de dados para o Azure sem precisar de uma conexão de internet.
+- **AzCopy**: Ferramenta de linha de comando usada para copiar dados de e para contas de armazenamento no Azure.
+- **Gerenciador de Armazenamento do Azure**: Interface gráfica que ajuda a gerenciar e monitorar os recursos de armazenamento.
+- **Sincronização de Arquivos do Azure**: Permite sincronizar os arquivos em servidores locais com compartilhamentos de arquivos no Azure, facilitando a replicação de dados e a continuidade de negócios.
