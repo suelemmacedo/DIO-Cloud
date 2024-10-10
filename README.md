@@ -98,3 +98,17 @@ Existem diversas ferramentas para facilitar a migração de dados para o Azure:
 - **AzCopy**: Ferramenta de linha de comando usada para copiar dados de e para contas de armazenamento no Azure.
 - **Gerenciador de Armazenamento do Azure**: Interface gráfica que ajuda a gerenciar e monitorar os recursos de armazenamento.
 - **Sincronização de Arquivos do Azure**: Permite sincronizar os arquivos em servidores locais com compartilhamentos de arquivos no Azure, facilitando a replicação de dados e a continuidade de negócios.
+
+No Microsoft Azure, **Identidade, Segurança e Acesso** referem-se a um conjunto de serviços e funcionalidades projetados para proteger os recursos e garantir que apenas usuários e sistemas autorizados tenham acesso adequado.
+
+1. **Azure Active Directory (Azure AD)**: É o serviço de gerenciamento de identidade e controle de acesso. Ele centraliza o gerenciamento de credenciais e permissões de usuários e dispositivos. Funciona como uma ponte entre o usuário e as aplicações, permitindo Single Sign-On (SSO), autenticação multifator (MFA), e integração com sistemas de identidade locais e na nuvem.
+
+2. **Controle de Acesso Baseado em Funções (RBAC)**: O RBAC permite gerenciar permissões de usuários com base em suas funções dentro da organização. É uma maneira eficaz de conceder o nível certo de acesso aos recursos do Azure, de acordo com o cargo ou função de cada usuário.
+
+3. **Políticas e Conformidade de Segurança**: O Azure fornece ferramentas para aplicar políticas de segurança e conformidade, permitindo que organizações criem regras de controle de acesso, como requisitos de complexidade de senha, restrições de local de login e uso de MFA.
+
+4. **Segurança de Rede e Identidade**: O Azure oferece soluções para proteger redes e identidades, como firewalls de rede, rede virtual privada (VPN), e proteções contra ataques DDoS, além de monitoramento e alertas de ameaças em tempo real.
+
+5. **Azure Key Vault**: Armazena segredos, chaves de criptografia e certificados de maneira segura, protegendo as credenciais necessárias para os aplicativos, com controle rigoroso de acesso.
+
+Esses recursos ajudam a proteger dados e recursos críticos em ambientes em nuvem, fornecendo uma abordagem robusta e centralizada para identidade e segurança.
